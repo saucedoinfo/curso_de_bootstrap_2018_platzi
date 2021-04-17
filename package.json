@@ -1,5 +1,16 @@
 {
   "dependencies": {
     "bootstrap": "^5.0.0-beta3"
-  }
+  },
+  "name": "curso_bootstrap_2018_platzi",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "purgecss --css css/custom.css --content index.html --output css/reducido.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
 }
