@@ -8,6 +8,14 @@
     width: 80px;
 }
 
+// main -------------------------------------
+
+#main .carousel-inner img{
+    max-height: 90vh;
+    object-fit: cover;
+    filter: grayscale(70%);
+}
+
 
 // footer -------------------------------------
 
