@@ -2,6 +2,15 @@
 	color: #97c93e !important;
 }
 
+.btn-platzi {
+	background-color: #97c93e;
+	color: #fff !important;
+}
+
+.btn-platzi:hover {
+	background-color: #7b9e3e;
+}
+
 // header -------------------------------------
 
 #header img {
@@ -31,7 +40,7 @@
 }
 
 #carousel .overlay .container,
-#carousel .overlay .row {
+.row {
 	height: 100%;
 }
 
