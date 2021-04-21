@@ -7,6 +7,10 @@
 	color: #fff !important;
 }
 
+.bg-black {
+    background-color: #191c1d !important;
+}
+
 .btn-platzi:hover {
 	background-color: #7b9e3e;
 }
@@ -42,6 +46,15 @@
 #carousel .overlay .container,
 .row {
 	height: 100%;
+}
+
+#place-time {
+    background-color: #191c1d;
+    color: #fff;
+}
+
+#place-time img {
+    max-width: 100%;
 }
 
 // footer -------------------------------------
