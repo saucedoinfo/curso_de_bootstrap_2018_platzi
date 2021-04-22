@@ -7,65 +7,66 @@
 		<link rel="stylesheet" href="./css/custom.css" />
 		<title>Proyecto Final Curso Bootstrap - Platzi</title>
 	</head>
-	<body>
+	<body data-bs-spy="scroll" data-target="#navbar" data-offset="57px">
 		<!-- header -->
-		<header id="header">
-			<nav class="navbar navbar-expand-lg navbar-dark bg-black">
-				<div class="container">
-					<a class="navbar-brand" href="#"
-						><img src="assets/images/platzi-logo.png" alt="Platzi Logo" /> Conf
-						Japon 東京都</a
-					>
+		<header
+			id="header"
+			class="sticky-top navbar navbar-expand-lg navbar-dark bg-black"
+		>
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					><img src="assets/images/platzi-logo.png" alt="Platzi Logo" /> Conf
+					Japon 東京都</a
+				>
 
-					<button
-						class="navbar-toggler"
-						type="button"
-						data-bs-toggle="collapse"
-						data-bs-target="#navbarSupportedContent"
-						aria-controls="navbarSupportedContent"
-						aria-expanded="false"
-						aria-label="Toggle navigation"
-					>
-						<span class="navbar-toggler-icon"></span>
-					</button>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbar"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
 
-					<div
-						class="collapse navbar-collapse text-platzi"
-						id="navbarSupportedContent"
-					>
-						<ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>La conferencia</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>Los oradores</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>El lugar y Fecha</a
-								>
-							</li>
-							<li class="nav-item">
-								<a class="nav-link active" aria-current="page" href="#"
-									>Conviertete en orador</a
-								>
-							</li>
-							<li class="nav-item">
-								<a
-									class="nav-link active text-platzi"
-									aria-current="page"
-									href="#"
-									>Comprar tickets</a
-								>
-							</li>
-						</ul>
-					</div>
+				<div class="collapse navbar-collapse text-platzi" id="navbar">
+					<ul class="navbar-nav mb-2 mb-lg-0 ms-auto">
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#main"
+								>La conferencia</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#speakers"
+								>Los oradores</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" aria-current="page" href="#place-time"
+								>El lugar y Fecha</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active"
+								aria-current="page"
+								href="#become-a-speaker"
+								>Conviertete en orador</a
+							>
+						</li>
+						<li class="nav-item">
+							<a
+								class="nav-link active text-platzi"
+								aria-current="page"
+								href="#"
+								>Comprar tickets</a
+							>
+						</li>
+					</ul>
 				</div>
-			</nav>
+			</div>
 		</header>
 		<!-- /header -->
 		<!-- main -->
@@ -141,7 +142,7 @@
 				</div>
 
 				<div class="row">
-					<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4">
 						<div class="card shadow">
 							<img
 								class="card-img-top"
@@ -164,7 +165,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4">
 						<div class="card shadow">
 							<img
 								class="card-img-top"
@@ -187,7 +188,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4">
 						<div class="card shadow">
 							<img
 								class="card-img-top"
@@ -210,7 +211,7 @@
 						</div>
 					</div>
 
-					<div class="col-12 col-sm-6 col-md-4 col-xl-3 mb-4">
+					<div class="col-12 col-sm-6 col-md-6 col-xl-3 mb-4">
 						<div class="card shadow">
 							<img
 								class="card-img-top"
@@ -236,8 +237,40 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
+				<!-- Lugar y Fecha -->
+				<section id="place-time">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12 col-lg-6 px-0 align-self-center">
+								<img src="assets/images/tokio.jpg" alt="Ciudad de tokio" />
+							</div>
+							<div class="col-12 col-lg-6 py-4 px-4 align-self-center">
+								<h2>Tokio - Octubre 2025</h2>
+								<p>
+									Tokio (東京都 Tōkyō-to?, lit. «capital del este»; pronunciación
+									japonesa: Acerca de este sonido tokio) oficialmente Metrópolis de
+									Tokio es la capital de facto6​ de Japón, localizada en el centro
+									este de la isla de Honshu, concretamente en la región de Kantō. En
+									conjunto forma una de las 47 prefecturas de Japón. Es el centro de
+									la política, economía, educación, comunicación y cultura del país.
+									Cuenta también con la mayor concentración de sedes corporativas,
+									instituciones financieras, universidades y colegios, museos,
+									teatros, establecimientos comerciales y de entretenimiento de todo
+									Japón.
+								</p>
+								<a
+									href="https://es.wikipedia.org/wiki/Tokio"
+									target="_blanck"
+									class="btn btn-outline-light"
+									>Conoce más</a
+								>
+							</div>
+						</div>
+					</div>
+				</section>
+				<!-- End Lugar y Fecha -->
 		<!-- Conviértete en speaker -->
-		<section id="become-a-speaker" class="py-5">
+		<section id="become-a-speaker" class="py-5 bg-light">
 			<div class="container">
 				<div class="row">
 					<div class="col text-uppercase text-center">
@@ -258,15 +291,27 @@
 						<form>
 							<div class="form row">
 								<div class="mb-3 form-group col-12 col-md-6">
-									<input type="text" class="form-control" placeholder="Nombre">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Nombre"
+									/>
 								</div>
 								<div class="mb-3 col-12 col-md-6">
-									<input type="text" class="form-control" placeholder="Apellido">
+									<input
+										type="text"
+										class="form-control"
+										placeholder="Apellido"
+									/>
 								</div>
 							</div>
 							<div class="form row">
 								<div class="mb-3 col">
-									<textarea name="text" class="form-control form-control-lg" placeholder="Sobre que quieres hablar?"></textarea>
+									<textarea
+										name="text"
+										class="form-control form-control-lg"
+										placeholder="Sobre que quieres hablar?"
+									></textarea>
 									<small class="form-text text-muted">
 										Recuerda incluir un titulo para tu charla
 									</small>
@@ -274,50 +319,21 @@
 							</div>
 							<div class="row">
 								<div class="col">
-									<button type="button" class="btn btn-platzi w-100">Enviar</button>
+									<button type="button" class="btn btn-platzi w-100">
+										Enviar
+									</button>
 								</div>
-							</div> 
+							</div>
 						</form>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- End Conviértete en speaker -->
-		<!-- Lugar y Fecha -->
-		<section id="place-time">
-			<div class="container-fluid">
-				<div class="row">
-					<div class="col-12 col-lg-6 px-0 align-self-center">
-						<img src="assets/images/tokio.jpg" alt="Ciudad de tokio" />
-					</div>
-					<div class="col-12 col-lg-6 py-4 px-4 align-self-center">
-						<h2>Tokio - Octubre 2025</h2>
-						<p>
-							Tokio (東京都 Tōkyō-to?, lit. «capital del este»; pronunciación
-							japonesa: Acerca de este sonido tokio) oficialmente Metrópolis de
-							Tokio es la capital de facto6​ de Japón, localizada en el centro
-							este de la isla de Honshu, concretamente en la región de Kantō. En
-							conjunto forma una de las 47 prefecturas de Japón. Es el centro de
-							la política, economía, educación, comunicación y cultura del país.
-							Cuenta también con la mayor concentración de sedes corporativas,
-							instituciones financieras, universidades y colegios, museos,
-							teatros, establecimientos comerciales y de entretenimiento de todo
-							Japón.
-						</p>
-						<a
-							href="https://es.wikipedia.org/wiki/Tokio"
-							target="_blanck"
-							class="btn btn-outline-light"
-							>Conoce más</a
-						>
-					</div>
-				</div>
-			</div>
-		</section>
-		<!-- End Lugar y Fecha -->
+
 		<!-- footer -->
-		<footer id="footer">
-			<div class="container">
+		<footer id="footer" class="bg-black">
+			<div class="container ">
 				<div class="row footer_font py-3 text-center">
 					<div class="col-4 py-2 col-lg-2 py-lg-0">
 						<a href="#" class="link-light text-decoration-none"
