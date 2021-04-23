@@ -58,10 +58,11 @@
 						</li>
 						<li class="nav-item">
 							<a
-								class="nav-link active text-platzi"
-								aria-current="page"
+								class="nav-link text-platzi"
 								href="#"
-								>Comprar tickets</a
+								data-bs-toggle="modal"
+								data-bs-target="#modalCompra"
+								>Comprar Tickets</a
 							>
 						</li>
 					</ul>
@@ -119,8 +120,8 @@
 								<button
 									type="button"
 									class="btn btn-platzi"
-									data-toggle="modal"
-									data-target="#modalCompra"
+									data-bs-toggle="modal" 
+									data-bs-target="#modalCompra"
 								>
 									Comprar Tickets
 								</button>
@@ -237,38 +238,38 @@
 			</div>
 		</section>
 		<!-- End Speakers -->
-				<!-- Lugar y Fecha -->
-				<section id="place-time">
-					<div class="container-fluid">
-						<div class="row">
-							<div class="col-12 col-lg-6 px-0 align-self-center">
-								<img src="assets/images/tokio.jpg" alt="Ciudad de tokio" />
-							</div>
-							<div class="col-12 col-lg-6 py-4 px-4 align-self-center">
-								<h2>Tokio - Octubre 2025</h2>
-								<p>
-									Tokio (東京都 Tōkyō-to?, lit. «capital del este»; pronunciación
-									japonesa: Acerca de este sonido tokio) oficialmente Metrópolis de
-									Tokio es la capital de facto6​ de Japón, localizada en el centro
-									este de la isla de Honshu, concretamente en la región de Kantō. En
-									conjunto forma una de las 47 prefecturas de Japón. Es el centro de
-									la política, economía, educación, comunicación y cultura del país.
-									Cuenta también con la mayor concentración de sedes corporativas,
-									instituciones financieras, universidades y colegios, museos,
-									teatros, establecimientos comerciales y de entretenimiento de todo
-									Japón.
-								</p>
-								<a
-									href="https://es.wikipedia.org/wiki/Tokio"
-									target="_blanck"
-									class="btn btn-outline-light"
-									>Conoce más</a
-								>
-							</div>
-						</div>
+		<!-- Lugar y Fecha -->
+		<section id="place-time">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 col-lg-6 px-0 align-self-center">
+						<img src="assets/images/tokio.jpg" alt="Ciudad de tokio" />
 					</div>
-				</section>
-				<!-- End Lugar y Fecha -->
+					<div class="col-12 col-lg-6 py-4 px-4 align-self-center">
+						<h2>Tokio - Octubre 2025</h2>
+						<p>
+							Tokio (東京都 Tōkyō-to?, lit. «capital del este»; pronunciación
+							japonesa: Acerca de este sonido tokio) oficialmente Metrópolis de
+							Tokio es la capital de facto6​ de Japón, localizada en el centro
+							este de la isla de Honshu, concretamente en la región de Kantō. En
+							conjunto forma una de las 47 prefecturas de Japón. Es el centro de
+							la política, economía, educación, comunicación y cultura del país.
+							Cuenta también con la mayor concentración de sedes corporativas,
+							instituciones financieras, universidades y colegios, museos,
+							teatros, establecimientos comerciales y de entretenimiento de todo
+							Japón.
+						</p>
+						<a
+							href="https://es.wikipedia.org/wiki/Tokio"
+							target="_blanck"
+							class="btn btn-outline-light"
+							>Conoce más</a
+						>
+					</div>
+				</div>
+			</div>
+		</section>
+		<!-- End Lugar y Fecha -->
 		<!-- Conviértete en speaker -->
 		<section id="become-a-speaker" class="py-5 bg-light">
 			<div class="container">
@@ -333,7 +334,7 @@
 
 		<!-- footer -->
 		<footer id="footer" class="bg-black">
-			<div class="container ">
+			<div class="container">
 				<div class="row footer_font py-3 text-center">
 					<div class="col-4 py-2 col-lg-2 py-lg-0">
 						<a href="#" class="link-light text-decoration-none"
@@ -361,6 +362,65 @@
 			</div>
 		</footer>
 		<!-- /footer -->
+
+		<!-- Modal -->
+		<div class="modal fade" id="modalCompra" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+			<div class="modal-content">
+				<div class="modal-header">
+				<h5 class="modal-title" id="exampleModalLabel">Comprar Ticket</h5>
+				<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form class="was-validated">
+						<div class="form-row">
+						<div class="col form-group">
+							<div class="input-group mb-3">
+							<div class="input-group-prepend">
+								<span class="input-group-text" id="basic-addon1">@</span>
+							</div>
+							<input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+							<div class="invalid-feedback">
+								Tu Username es incorrecto, ingrésalo nuevamente
+							</div>
+							</div>
+						</div>
+						</div>
+						<div class="form-row">
+						<div class="col form-group">
+							<label class="text-platzi-modal py-1" for="inputPassword5">Password</label>
+							<input type="password" id="inputPassword5" class="form-control" aria-describedby="passwordHelpBlock" placeholder="Password">
+							<div class="invalid-feedback">
+							Tu password es incorrecto
+							</div>
+						</div>
+						</div>
+						<div class="form-row">
+						<div class="col form-group">
+							<div class="form-check">
+							<div class="custom-control custom-checkbox mb-3">
+								<input type="checkbox" class="custom-control-input" id="customControlValidation1" required>
+								<label class="custom-control-label py-2" for="customControlValidation1">Acepto los términos y condicones del sorteo</label>
+								<div class="invalid-feedback">  Debes aceptar los términos y condiciones para acceder al sorteo.</div>
+							</div>
+							</div>
+						</div>
+						</div>
+					</form>
+					<div class="alert alert-success" role="alert">
+						Recibirás un correo de confirmación si sales sorteado.
+					  </div>
+				</div>
+				<div class="modal-footer">
+				  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+				  <button type="button" class="btn btn-primary">Comprar</button>
+				</div>
+			</div>
+			</div>
+		</div
+
+		<!-- /Modal -->
+
 		<script
 			src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.1/dist/umd/popper.min.js"
 			integrity="sha384-SR1sx49pcuLnqZUnnPwx6FCym0wLsk5JZuNx2bPPENzswTNFaQU1RDvt3wT4gWFG"
