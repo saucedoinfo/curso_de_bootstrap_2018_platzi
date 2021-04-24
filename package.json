@@ -9,7 +9,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "purgecss --css css/custom.css --content index.html --output css/reducido.css"
+    "build": "purgecss --css css/custom.css --content index.html --output css/style-min.css"
   },
   "author": "",
   "license": "ISC",
