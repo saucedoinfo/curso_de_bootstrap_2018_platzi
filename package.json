@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    
     "@fortawesome/fontawesome-free": "^5.15.3",
     "bootstrap": "^5.0.0-beta3"
   },
@@ -9,9 +8,12 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "purgecss --css css/custom.css --content index.html --output css/style-min.css"
+    "build": "purgecss --css css/custom.css --content index.html assets/pages/*.html --output css/style-min.css"
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "",
+  "devDependencies": {
+    "purgecss": "^4.0.3"
+  }
 }
